@@ -46,4 +46,4 @@ function blink() {
 
 document.addEventListener('click', blink);
 
-setInterval(blink, 3000);
+setInterval(blink, 5000);
