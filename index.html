@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>typescript-test</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+
+  <body
+    class="flex flex-col justify-center items-center h-screen bg-[#ddd] m-0"
+  >
+    <div class="relative w-[300px] h-[300px] flex items-center justify-center">
+      <div
+        class="eye-container flex gap-5 bg-[#86c1cf] h-[150px] w-[150px] rounded-full p-5 my-5 mx-5 items-center justify-center relative z-1"
+      >
+        <div
+          id="eye-1"
+          class="w-[40px] h-[70px] bg-white rounded-[50%] flex justify-center items-center relative overflow-hidden shrink-0"
+        >
+          <div
+            id="pupil-1"
+            class="w-[25px] h-[25px] bg-[#271501] rounded-full absolute transition-all duration-100 ease-linear z-3"
+          >
+            <div
+              class="reflection w-2 h-2 bg-white rounded-full absolute top-[2.5px] left-[6px] z-2"
+            ></div>
+          </div>
+          <div
+            id="eye-outer-1"
+            class="w-[35px] h-[35px] bg-[#c99812] rounded-full absolute transition-all duration-100 ease-linear"
+          ></div>
+          <div
+            id="eyelid-1"
+            class="absolute z-4 w-full h-full bg-white -top-full transition-[top] duration-100"
+          ></div>
+        </div>
+        <div
+          id="eye-2"
+          class="w-[40px] h-[70px] bg-white rounded-[50%] flex justify-center items-center relative overflow-hidden shrink-0"
+        >
+          <div
+            id="pupil-2"
+            class="w-[25px] h-[25px] bg-[#201701] rounded-full absolute transition-all duration-100 ease-linear z-3"
+          >
+            <div
+              class="reflection w-2 h-2 bg-white rounded-full absolute top-[2.5px] left-[6px] z-2"
+            ></div>
+          </div>
+          <div
+            id="eye-outer-2"
+            class="w-[35px] h-[35px] bg-[#c99812] rounded-full absolute transition-all duration-100 ease-linear"
+          ></div>
+          <div
+            id="eyelid-2"
+            class="absolute z-4 w-full h-full bg-white -top-full transition-[top] duration-100"
+          ></div>
+        </div>
+      </div>
+
+      <div
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full"
+      >
+        <img
+          src="/public/photo.webp"
+          alt="photo"
+          class="w-full h-full object-cover"
+        />
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+    <!-- <script type="module" src="/src/typeScript-utilities.ts"></script> -->
+  </body>
+</html>
