@@ -34,7 +34,7 @@ document.addEventListener('mousemove', (event) => {
   });
 });
 
-document.addEventListener('click', () => {
+function blink() {
   [eyelid1, eyelid2].forEach((eyelid) => {
     if (!eyelid) return;
     eyelid.style.top = '0%';
@@ -42,14 +42,8 @@ document.addEventListener('click', () => {
       eyelid.style.top = '-100%';
     }, 100);
   });
-});
+}
 
-setInterval(() => {
-  [eyelid1, eyelid2].forEach((eyelid) => {
-    if (!eyelid) return;
-    eyelid.style.top = '0%';
-    setTimeout(() => {
-      eyelid.style.top = '-100%';
-    }, 100);
-  });
-}, 3000);
+document.addEventListener('click', blink);
+
+setInterval(blink, 3000);
