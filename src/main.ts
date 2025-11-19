@@ -15,7 +15,7 @@ document.addEventListener('mousemove', (event) => {
     const eyeCenterY = rect.top + rect.height / 2;
     const deltaX = event.clientX - eyeCenterX;
     const deltaY = event.clientY - eyeCenterY;
-    const distance = Math.min(8, Math.sqrt(deltaX ** 2 + deltaY ** 2));
+    const distance = Math.min(7, Math.sqrt(deltaX ** 2 + deltaY ** 2));
     const angle = Math.atan2(deltaY, deltaX);
 
     const pupil = index === 0 ? pupil1 : pupil2;
