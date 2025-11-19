@@ -46,4 +46,12 @@ function blink() {
 
 document.addEventListener('click', blink);
 
-setInterval(blink, 5000);
+function scheduleRandomBlink() {
+  const randomInterval = Math.random() * 4000 + 2000;
+  setTimeout(() => {
+    blink();
+    scheduleRandomBlink();
+  }, randomInterval);
+}
+
+scheduleRandomBlink();
